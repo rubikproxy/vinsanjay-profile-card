@@ -1,7 +1,3 @@
-Here’s a revised version of your README.md with a more streamlined and user-friendly tone, while maintaining the key details:
-
----
-
 # Personal Professional Card - Astro Template
 
 **Hello! I'm vinsanjay.**  
