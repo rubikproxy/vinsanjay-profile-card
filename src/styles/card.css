@@ -1,0 +1,199 @@
+/* ------------------------------- GLOBAL STYLES ------------------------------- */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #131516;
+    color: #FFFFFF;
+}
+
+/* ------------------------------- CONTAINER ------------------------------- */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+/* ------------------------------- CARD ------------------------------- */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 750px;
+    background: linear-gradient(135deg, rgba(21, 13, 107, 0.8), rgba(188, 16, 80, 0.8));
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* ------------------------------- IMAGE ------------------------------- */
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------------- DESCRIPTION ------------------------------- */
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    flex: 2;
+}
+
+.descripcion h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.descripcion h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.descripcion .icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.descripcion .icons a {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin: 0 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.descripcion .icons a:hover {
+    transform: translateY(-5px) scale(1.1);
+    color: #E91E63; /* Hover effect color */
+}
+
+/* ------------------------------- TOOLTIP ------------------------------- */
+.tooltip-text {
+    position: absolute;
+    top: -25px;
+    left: -115%;
+    z-index: 2;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    background-color: #192733;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+#fade {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hover-text:hover #fade {
+    opacity: 1;
+}
+
+.hover-text {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* ------------------------------- RESPONSIVE STYLES ------------------------------- */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .image {
+        padding: 15px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .descripcion {
+        padding: 20px;
+    }
+
+    .descripcion h1 {
+        font-size: 22px;
+    }
+
+    .descripcion h2 {
+        font-size: 18px;
+    }
+
+    .descripcion p {
+        font-size: 15px;
+    }
+
+    .descripcion .icons {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .descripcion h1 {
+        font-size: 20px;
+    }
+
+    .descripcion h2 {
+        font-size: 16px;
+    }
+
+    .descripcion p {
+        font-size: 14px;
+    }
+
+    .descripcion .icons {
+        margin-top: 10px;
+    }
+}

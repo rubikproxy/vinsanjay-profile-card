@@ -1,0 +1,28 @@
+{
+  "name": "personal-card-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rubikproxy/vinsanjay-profile-card"
+  },
+  "homepage": "https://profile.vinsanjay.me",
+  "description": "A personal card project built with Astro for showcasing your profile and details.",
+  "keywords": [
+    "astro",
+    "personal-card",
+    "profile"
+  ],
+  "author": "SANJAY KUMAR",
+  "license": "MIT"
+}
