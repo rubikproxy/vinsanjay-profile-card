@@ -144,13 +144,26 @@ body {
     }
 
     .image {
-        padding: 15px;
-        width: 120px;
-        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        padding: 20px;
+        transition: box-shadow 0.3s ease;
+        order: 1;
+    }
+    .image img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .descripcion {
         padding: 20px;
+        order: 2;
     }
 
     .descripcion h1 {
@@ -171,9 +184,22 @@ body {
 }
 
 @media (max-width: 576px) {
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        padding: 20px;
+        transition: box-shadow 0.3s ease;
+        order: 1;
+    }
     .image img {
-        width: 100px;
-        height: 100px;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card-container {
